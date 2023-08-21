@@ -2,7 +2,7 @@
 function Home() {
 
   return (
-    <div className="h-screen bg-red-500">
+    <div >
         Home
     </div>
   )

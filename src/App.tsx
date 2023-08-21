@@ -1,17 +1,20 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouteObject, useRoutes } from "react-router-dom";
+import Layout from "./layout";
 import Home from "./pages/index.page";
 
-const router = createBrowserRouter([
-    {
-        path: "/",
-        Component: () => <Home />,
-    },
-]);
-
 export default function App() {
-    return <RouterProvider router={router} />;
-}
+    const routes: RouteObject[] = [
+        {
+            path: "/",
+            element: <Layout />,
+            children: [
+                { index: true, element: <Home /> },
+                // { path: "*", element: "" },
+            ],
+        },
+    ];
 
-if (import.meta.hot) {
-    import.meta.hot.dispose(() => router.dispose());
+    const element = useRoutes(routes);
+
+    return <>{element}</>;
 }
