@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Font Awesome 6 Brands';
+    src: url('FontAwesome6Brands-Regular.woff2') format('woff2'),
+        url('FontAwesome6Brands-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'F37 Judge';
+    src: url('F37Judge-Bold.woff2') format('woff2'),
+        url('F37Judge-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Area Normal';
+    src: url('AreaNormal-SemiBold.woff2') format('woff2'),
+        url('AreaNormal-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
