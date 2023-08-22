@@ -7,8 +7,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        primary: ["'SVN-Mabry Pro', 'Arial', 'sans-serif'"],
-        secondary: ["'SVN-Grand Slang', 'Arial', 'sans-serif'"],
+        primary: ["'Area Normal', 'Arial', 'sans-serif'"],
+        secondary: ["'F37 Judge', 'Arial', 'sans-serif'"],
+        third: ["'Font Awesome 6 Brands', 'Arial', 'sans-serif'"],
     },
     colors: {
       primary: '#396dff',

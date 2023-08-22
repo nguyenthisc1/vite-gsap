@@ -1,0 +1,57 @@
+.logo:hover .klutch_logo_i_bounce {
+  animation: klutch_i_bounce 2s ease-in-out forwards;
+  transform-origin: bottom;
+}
+
+.logo:hover .klutch_logo_star_spin {
+  animation: klutch_3d_spin 2s ease-in-out forwards;
+  transform-origin: 60.5% center;
+  transition: all 0.3s ease-in-out;
+  backface-visibility: hidden;
+}
+
+@keyframes klutch_i_bounce {
+  0% {
+    transform: scaleY(1);
+  }
+  10% {
+    transform: scaleY(0.3);
+  }
+  20% {
+    transform: scaleY(1.1);
+  }
+  30% {
+    transform: scaleY(0.8);
+  }
+  40% {
+    transform: scaleY(1);
+  }
+  45% {
+    transform: scaleY(0.9);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes klutch_3d_spin {
+  0% {
+    transform: scaleX(1) translateZ(0);
+  }
+
+  20% {
+    transform: scaleX(1) translateZ(0);
+  }
+  32% {
+    transform: scaleX(-1) translateY(-17%) translateZ(0);
+  }
+  44% {
+    transform: scaleX(1) translateZ(0);
+  }
+  56% {
+    transform: scaleX(-1) translateZ(0);
+  }
+  68% {
+    transform: scaleX(1) translateY(0%) translateZ(0);
+  }
+}

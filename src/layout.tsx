@@ -7,6 +7,7 @@ export default function Layout() {
             <Header />
             <main>
                 <Outlet />
+                <div className="h-screen"></div>
             </main>
         </>
     );

@@ -1,0 +1,7 @@
+.hero {
+  &-inner {
+    &::after {
+      @apply absolute bottom-[-49px] left-[-1vw] right-[-1vw] z-[-3] h-[50px] rounded-b-[200%] bg-inherit content-[''];
+    }
+  }
+}

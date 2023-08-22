@@ -1,0 +1,59 @@
+:root {
+    --t: 0.6s;
+
+    // z-index
+    --z-cursor: 160;
+    --z-loading: 159;
+    --z-modal: 150;
+    --z-header: 111;
+    --z-nav: 110;
+    --z-button: 109;
+    --z-body: 5;
+    --z-hero: 4;
+
+    // cubic
+    --cubic-expoEaseOut: cubic-bezier(0.19, 1, 0.22, 1);
+    --cubic-quintEaseIn: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+::selection {
+    @apply bg-primary text-white;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+}
+html {
+    // scroll-behavior: smooth;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+html.lenis {
+    height: auto;
+    overflow: hidden;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+    pointer-events: none;
+}
+body {
+    @apply font-primary;
+}
